@@ -104,7 +104,7 @@ func TestDemoReady(t *testing.T) {
 				host.Status.Provisioning.State,
 				host.Status.ErrorMessage,
 			)
-			return host.Status.Provisioning.State == metal3v1alpha1.StateReady
+			return host.Status.Provisioning.State == metal3v1alpha1.Available
 		},
 	)
 }
